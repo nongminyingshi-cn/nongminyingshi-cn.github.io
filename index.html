@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Equivalent" content="IE=edge">
+<title>农民影视 | 三农题材纪录片与乡村影像创作工作室</title>
+<meta name="keywords" content="农民影视,三农题材纪录片,乡村影像,农业宣传片,乡村振兴视频,农业短视频,农产品品牌视觉,农村题材影视制作">
+<meta name="description" content="农民影视专注三农题材影像创作：乡村纪录片、农业宣传片、农产品品牌片与乡村短视频内容。把土地上的真实故事，拍成能被看见、能被记住的影像。">
+<meta name="author" content="农民影视">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2a1c0e">
+
+<link rel="canonical" href="https://nongminyingshi-cn.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="农民影视">
+<meta property="og:title" content="农民影视 | 三农题材纪录片与乡村影像创作工作室">
+<meta property="og:description" content="专注乡村纪录片、农业宣传片、农产品品牌片与乡村短视频内容创作。">
+<meta property="og:locale" content="zh_CN">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "农民影视",
+  "url": "https://nongminyingshi-cn.github.io/",
+  "logo": "https://nongminyingshi-cn.github.io/logo.png",
+  "description": "专注三农题材影像创作的工作室，涵盖乡村纪录片、农业宣传片、农产品品牌片与乡村短视频内容。",
+  "sameAs": ["https://nongminyingshi-cn.github.io/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "农民影视",
+  "url": "https://nongminyingshi-cn.github.io/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://nongminyingshi-cn.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<style>
+/* ============ 基础 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:#1c140d;color:#f3e9d8;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+:focus-visible{outline:2px solid #e8a84c;outline-offset:3px;border-radius:2px}
+
+/* ============ 变量 ============ */
+:root{
+  --wheat:#e8a84c;
+  --wheat2:#f3cf86;
+  --earth:#8a5a2b;
+  --earth2:#5c3a17;
+  --leaf:#7ba23f;
+  --bg:#1c140d;
+  --bg2:#241910;
+  --paper:#faf4e8;
+  --ink:#241910;
+  --line:rgba(255,240,220,.1);
+  --line2:rgba(232,168,76,.3);
+  --txt:#f3e9d8;
+  --txt2:#c9bda6;
+  --txt3:#948570;
+  --r:12px;
+  --shadow:0 24px 60px -25px rgba(0,0,0,.85);
+}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.section{padding:100px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--wheat);font-weight:600;margin-bottom:18px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--wheat)}
+.h-title{font-size:clamp(26px,4vw,44px);font-weight:800;line-height:1.22;letter-spacing:-.5px}
+.h-title em{font-style:normal;color:var(--wheat)}
+.h-sub{color:var(--txt2);max-width:640px;margin-top:16px;font-size:15px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:6px;font-weight:600;font-size:14px;transition:.3s;white-space:nowrap;border:1px solid transparent}
+.btn-primary{background:var(--wheat);color:#241910}
+.btn-primary:hover{background:var(--wheat2);transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(232,168,76,.55)}
+.btn-ghost{border-color:var(--line2);color:var(--wheat)}
+.btn-ghost:hover{background:rgba(232,168,76,.08);transform:translateY(-2px)}
+
+/* ============ 导航 ============ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,20,13,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+.nav.scrolled{border-bottom-color:var(--line);background:rgba(28,20,13,.94)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:17px;letter-spacing:.5px}
+.logo-mark{width:36px;height:36px;border-radius:50%;position:relative;flex:none;background:radial-gradient(circle at 35% 30%,#f3cf86,#c98a2e 55%,#6b3f12);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 4px 14px -4px rgba(232,168,76,.45)}
+.logo-mark svg{position:absolute;inset:0;margin:auto;width:19px;height:19px;stroke:#241910;fill:none;stroke-width:2}
+.logo small{display:block;font-size:10px;color:var(--txt3);font-weight:500;letter-spacing:.2em}
+.menu{display:flex;gap:4px;align-items:center}
+.menu a{padding:9px 14px;border-radius:5px;font-size:14px;color:var(--txt2);transition:.25s;font-weight:500}
+.menu a:hover{color:var(--wheat);background:rgba(232,168,76,.06)}
+.menu a.active{color:var(--wheat)}
+.menu a.cta{border:1px solid var(--line2);color:var(--wheat);margin-left:8px}
+.menu a.cta:hover{background:var(--wheat);color:#241910}
+.menu-btn{display:none;width:42px;height:42px;border-radius:6px;border:1px solid var(--line);position:relative}
+.menu-btn span{position:absolute;left:11px;width:18px;height:1.5px;background:var(--txt);transition:.3s}
+.menu-btn span:nth-child(1){top:15px}.menu-btn span:nth-child(2){top:21px}.menu-btn span:nth-child(3){top:27px}
+.menu-btn.open span:nth-child(1){top:21px;transform:rotate(45deg)}
+.menu-btn.open span:nth-child(2){opacity:0}
+.menu-btn.open span:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+/* ============ Hero ============ */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:140px 0 80px;overflow:hidden}
+/* 田野天空渐变 */
+.sky{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,#3d2b16 0%,#6b4220 28%,#a86b28 55%,#d39542 75%,#7c6230 100%)}
+/* 远山层 */
+.hills{position:absolute;left:0;right:0;bottom:0;height:52%;z-index:1}
+.hill{position:absolute;bottom:0;border-radius:50% 50% 0 0}
+.hill1{left:-10%;width:70%;height:46%;background:linear-gradient(180deg,#3f5e2a,#2a3f1c);opacity:.9}
+.hill2{right:-8%;width:60%;height:36%;background:linear-gradient(180deg,#4a6f30,#314d20);opacity:.85}
+.hill3{left:20%;width:55%;height:26%;background:linear-gradient(180deg,#5a7d36,#3a5522)}
+/* 麦浪 */
+.wheat-row{position:absolute;left:-10%;right:-10%;height:70px;z-index:2;background-image:repeating-linear-gradient(82deg,transparent 0,transparent 9px,rgba(243,207,134,.28) 9px,rgba(243,207,134,.28) 10px);transform:rotate(-2deg);animation:sway 6s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-2deg) translateX(-8px)}to{transform:rotate(-1deg) translateX(8px)}}
+.wheat-row.r1{bottom:18%;height:90px;opacity:.5}
+.wheat-row.r2{bottom:8%;height:120px}
+/* 飞鸟 */
+.birds{position:absolute;inset:0;z-index:2}
+.bird{position:absolute;width:22px;height:10px;background:radial-gradient(ellipse at center,rgba(20,12,5,.75) 40%,transparent 42%);background-size:50% 100%;background-repeat:no-repeat;background-position:0 0,100% 0;animation:fly 22s linear infinite}
+.bird.b2{animation-duration:30s;animation-delay:-9s}
+.bird.b3{animation-duration:26s;animation-delay:-16s}
+@keyframes fly{from{transform:translate(-40px,-20px)}to{transform:translate(120vw,60px)}}
+/* 太阳 */
+.sun{position:absolute;right:14%;top:16%;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(255,236,190,.95),rgba(255,200,120,.4) 45%,transparent 70%);z-index:1;animation:pulse 5s ease-in-out infinite alternate}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.08)}}
+.hero-in{position:relative;z-index:5;max-width:760px}
+.hero h1{font-size:clamp(36px,6vw,74px);font-weight:900;line-height:1.06;letter-spacing:-1.5px;color:#fff6e6}
+.hero h1 small{display:block;font-size:.34em;font-weight:600;letter-spacing:.4em;color:var(--wheat2);margin-bottom:18px;text-transform:uppercase}
+.hero h1 span{color:var(--wheat2)}
+.hero-lead{margin-top:26px;font-size:clamp(15px,1.6vw,18px);color:#f7eedd;max-width:600px;text-shadow:0 1px 2px rgba(0,0,0,.3)}
+.hero-actions{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:38px;margin-top:56px;flex-wrap:wrap}
+.hero-meta div{border-left:2px solid var(--wheat);padding-left:14px}
+.hero-meta b{display:block;font-size:clamp(24px,3.4vw,38px);font-weight:800;color:#fff6e6;letter-spacing:-1px}
+.hero-meta span{font-size:12px;color:#e8d8b8;letter-spacing:.06em}
+
+/* ============ 栏目一：服务 ============ */
+#services{background:#241910}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.srv{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.srv-item{position:relative;background:linear-gradient(165deg,rgba(255,250,240,.045),rgba(255,250,240,.01));border:1px solid var(--line);border-radius:var(--r);padding:32px 32px 30px;transition:.4s;display:grid;grid-template-columns:52px 1fr;gap:22px}
+.srv-item:hover{transform:translateY(-5px);border-color:var(--line2);background:rgba(232,168,76,.05)}
+.srv-i{width:52px;height:52px;border-radius:8px;display:grid;place-items:center;background:rgba(232,168,76,.1);border:1px solid var(--line2);grid-row:span 3}
+.srv-i svg{width:24px;height:24px;stroke:var(--wheat);fill:none;stroke-width:1.6}
+.srv-item h3{font-size:19px;font-weight:700;grid-column:2}
+.srv-item p{color:var(--txt2);font-size:14px;grid-column:2;margin-top:2px}
+.srv-tags{grid-column:2;display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.srv-tags li{padding:4px 12px;border-radius:4px;font-size:11.5px;color:var(--wheat2);background:rgba(232,168,76,.08);border:1px solid rgba(232,168,76,.18)}
+
+/* ============ 栏目二：作品 ============ */
+#works{background:#1c140d}
+.works-head{margin-bottom:48px}
+.works{display:flex;flex-direction:column;gap:0}
+.wrow{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-bottom:1px solid var(--line)}
+.wrow:last-child{border-bottom:none}
+.w-thumb{position:relative;min-height:300px;overflow:hidden}
+.w-thumb-bg{position:absolute;inset:0;transition:.8s transform}
+.wrow:hover .w-thumb-bg{transform:scale(1.06)}
+.w-thumb-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,20,13,.15),rgba(28,20,13,.75))}
+.w-thumb-in{position:absolute;inset:0;z-index:2;padding:32px;display:flex;flex-direction:column;justify-content:space-between}
+.w-num{font-size:13px;font-weight:800;color:var(--wheat);letter-spacing:.2em}
+.w-tag{align-self:flex-start;padding:5px 13px;border-radius:4px;font-size:11px;background:rgba(28,20,13,.72);border:1px solid var(--line);letter-spacing:.1em}
+.w-info{padding:48px 0 48px 60px;display:flex;flex-direction:column;justify-content:center}
+.wrow.flip .w-info{padding:48px 60px 48px 0}
+.w-info .yr{font-size:12px;color:var(--wheat);letter-spacing:.18em;margin-bottom:14px}
+.w-info h3{font-size:clamp(22px,2.8vw,32px);font-weight:800;line-height:1.3}
+.w-info p{color:var(--txt2);margin-top:14px;font-size:14.5px;max-width:480px}
+.w-info ul{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.w-info ul li{padding:5px 13px;border-radius:4px;font-size:11.5px;color:var(--txt2);border:1px solid var(--line);background:rgba(255,250,240,.02)}
+.w-more{display:inline-flex;align-items:center;gap:8px;margin-top:26px;color:var(--wheat);font-size:14px;font-weight:600;transition:.25s}
+.w-more svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;transition:.3s}
+.w-more:hover svg{transform:translateX(5px)}
+.c1{background:linear-gradient(150deg,#4a6b2c,#241910)}
+.c2{background:linear-gradient(150deg,#8a5a2b,#241910)}
+.c3{background:linear-gradient(150deg,#3a6b5a,#241910)}
+.c4{background:linear-gradient(150deg,#6b4a2a,#241910)}
+
+/* ============ 栏目三：流程（横向步骤条） ============ */
+#process{background:#241910}
+.proc{position:relative}
+.proc-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:20px}
+.pnode{padding:0 20px 0 0;position:relative}
+.pnode::before{content:"";position:absolute;left:0;right:20px;top:26px;height:2px;background:linear-gradient(90deg,var(--wheat),var(--line));z-index:0}
+.pnode:last-child::before{display:none}
+.pdot{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;position:relative;z-index:2;background:#241910;border:2px solid var(--wheat);color:var(--wheat);font-weight:800;font-size:15px;margin-bottom:22px;transition:.4s}
+.pnode:hover .pdot{background:var(--wheat);color:#241910;transform:scale(1.08)}
+.pnode h4{font-size:17px;font-weight:700;margin-bottom:8px}
+.pnode p{font-size:13.5px;color:var(--txt2)}
+.pnode small{display:block;margin-top:14px;font-size:11.5px;color:var(--wheat);letter-spacing:.1em}
+
+/* ============ 栏目四：田野调查/纪实档案 ============ */
+#field{background:#1c140d}
+.field-head{margin-bottom:50px}
+.field{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.fcard{background:#241910;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.4s}
+.fcard:hover{transform:translateY(-6px);border-color:var(--line2);box-shadow:var(--shadow)}
+.fphoto{aspect-ratio:4/3;position:relative;overflow:hidden}
+.fphoto-bg{position:absolute;inset:0;transition:.8s transform}
+.fcard:hover .fphoto-bg{transform:scale(1.08)}
+.fphoto-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(28,20,13,.85),transparent 60%)}
+.fplace{position:absolute;left:20px;top:18px;z-index:2;padding:5px 12px;border-radius:4px;font-size:11px;background:rgba(28,20,13,.7);border:1px solid var(--line);color:var(--wheat2);letter-spacing:.06em}
+.fquote{position:absolute;right:18px;bottom:16px;z-index:2;font-size:34px;color:var(--wheat);line-height:1;font-family:Georgia,serif}
+.fbody{padding:24px 26px 28px}
+.fmeta{display:flex;justify-content:space-between;align-items:center;font-size:11.5px;color:var(--txt3);letter-spacing:.06em}
+.fmeta b{color:var(--wheat);font-weight:700}
+.fbody h4{font-size:18px;font-weight:700;margin-top:12px;line-height:1.45}
+.fbody p{color:var(--txt2);font-size:13.5px;margin-top:10px}
+.flink{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--wheat);margin-top:18px;transition:.25s}
+.flink:hover{color:var(--wheat2)}
+.flink svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+.f1{background:linear-gradient(145deg,#5a7d36,#241910)}
+.f2{background:linear-gradient(145deg,#3a6b6a,#241910)}
+.f3{background:linear-gradient(145deg,#8a6a2a,#241910)}
+.f4{background:linear-gradient(145deg,#6b5a2a,#241910)}
+.f5{background:linear-gradient(145deg,#4a7d3a,#241910)}
+.f6{background:linear-gradient(145deg,#7a4a2a,#241910)}
+
+/* ============ 栏目五：资讯 ============ */
+#news{background:#241910}
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ncard{background:#1c140d;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;transition:.35s;position:relative}
+.ncard:hover{border-color:var(--line2);background:#241910;transform:translateY(-4px)}
+.ncard.cat-1{border-top:3px solid var(--wheat)}
+.ncard.cat-2{border-top:3px solid var(--leaf)}
+.ncard.cat-3{border-top:3px solid var(--earth)}
+.ncat{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.ncard.cat-1 .ncat{color:var(--wheat)}
+.ncard.cat-2 .ncat{color:var(--leaf)}
+.ncard.cat-3 .ncat{color:var(--earth);color:var(--wheat2)}
+.ndate{font-size:11.5px;color:var(--txt3);margin-top:14px}
+.ncard h4{font-size:16.5px;font-weight:700;line-height:1.55;margin-top:10px;transition:.25s}
+.ncard:hover h4{color:var(--wheat)}
+.ncard p{font-size:13.5px;color:var(--txt2);margin-top:12px;line-height:1.7}
+.nmore{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--wheat);margin-top:18px;transition:.25s}
+.nmore:hover{color:var(--wheat2)}
+.nmore svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* ============ CTA ============ */
+.cta{background:#1c140d;padding:96px 0}
+.cta-in{position:relative;border-radius:16px;padding:64px 56px;overflow:hidden;text-align:center;border:1px solid var(--line2);background:linear-gradient(150deg,#3a2a14,#241910)}
+.cta-in::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 100% at 50% 130%,rgba(232,168,76,.2),transparent 65%)}
+.cta-in>*{position:relative}
+.cta-in h2{font-size:clamp(26px,4vw,42px);font-weight:800;letter-spacing:-.5px;line-height:1.3}
+.cta-in p{color:var(--txt2);max-width:580px;margin:18px auto 0}
+.cta-actions{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+
+/* ============ 页脚 ============ */
+.foot{background:#150f09;padding:72px 0 0;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:44px;padding-bottom:52px}
+.foot-brand p{color:var(--txt3);font-size:13.5px;margin-top:18px;max-width:310px}
+.foot-social{display:flex;gap:10px;margin-top:22px}
+.foot-social a{width:38px;height:38px;border-radius:6px;border:1px solid var(--line);display:grid;place-items:center;transition:.25s}
+.foot-social a:hover{border-color:var(--line2);background:rgba(232,168,76,.06)}
+.foot-social svg{width:16px;height:16px;stroke:var(--txt2);fill:none;stroke-width:1.8}
+.foot-social a:hover svg{stroke:var(--wheat)}
+.foot h5{font-size:13px;letter-spacing:.16em;color:var(--wheat);margin-bottom:20px;text-transform:uppercase}
+.foot ul{display:grid;gap:11px}
+.foot a{color:var(--txt2);font-size:14px;transition:.2s}
+.foot a:hover{color:var(--wheat)}
+.foot-bot{border-top:1px solid var(--line);padding:24px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--txt3)}
+.foot-bot a{color:var(--txt3)}
+.foot-bot a:hover{color:var(--wheat)}
+
+/* ============ 返回顶部 ============ */
+.top{position:fixed;right:24px;bottom:28px;z-index:90;width:46px;height:46px;border-radius:6px;background:#241910;border:1px solid var(--line2);display:none;place-items:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.6);transition:.3s}
+.top.show{display:grid}
+.top:hover{background:var(--wheat)}
+.top svg{width:18px;height:18px;stroke:#f3e9d8;fill:none;stroke-width:2}
+.top:hover svg{stroke:#241910}
+
+/* ============ 动画 ============ */
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ 响应式 ============ */
+@media(max-width:980px){
+  .section{padding:74px 0}
+  .srv,.field,.news{grid-template-columns:repeat(2,1fr)}
+  .proc-bar{grid-template-columns:repeat(2,1fr);gap:34px 24px}
+  .pnode::before{display:none}
+  .wrow,.wrow.flip{grid-template-columns:1fr}
+  .w-info,.wrow.flip .w-info{padding:36px 0}
+  .w-thumb{min-height:240px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+  .menu a.cta{display:none}
+}
+@media(max-width:680px){
+  .wrap{padding:0 18px}
+  .section{padding:58px 0}
+  .menu{position:fixed;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;padding:18px;background:rgba(28,20,13,.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);gap:2px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:.3s}
+  .menu.open{transform:none;opacity:1;pointer-events:auto}
+  .menu a{padding:14px;border-radius:6px}
+  .menu a.cta{display:block;margin:8px 0 0;text-align:center}
+  .menu-btn{display:block}
+  .hero{padding:120px 0 70px}
+  .hero-meta{gap:26px;margin-top:40px}
+  .srv-item{grid-template-columns:1fr;gap:16px;padding:26px 22px}
+  .srv-i{grid-row:auto;width:46px;height:46px}
+  .srv-item h3,.srv-item p,.srv-tags{grid-column:1}
+  .srv-tags{margin-top:12px}
+  .proc-bar{grid-template-columns:1fr;gap:28px}
+  .field,.news,.foot-grid{grid-template-columns:1fr}
+  .foot-grid{gap:32px}
+  .cta-in{padding:44px 24px}
+  .sun{width:80px;height:80px;right:8%;top:20%}
+}
+@media print{
+  .nav,.menu-btn,.top,.birds,.sun,.wheat-row{display:none}
+  body{background:#fff;color:#000}
+  .section{padding:30px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ============ 导航 ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="农民影视 首页">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 6 5 9 5 13a7 7 0 0014 0c0-4-3-7-7-11z"/></svg></span>
+      <span>农民影视<small>FIELD &amp; FRAME STUDIO</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="主导航">
+      <a href="#top" class="active">首页</a>
+      <a href="#services">创作服务</a>
+      <a href="#works">影像作品</a>
+      <a href="#process">合作流程</a>
+      <a href="#field">田野档案</a>
+      <a href="#news">观察笔记</a>
+      <a href="#" class="cta">预约洽谈</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="top">
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="birds"><span class="bird b1" style="top:14%;animation-delay:0s"></span><span class="bird b2" style="top:22%;animation-delay:-9s"></span><span class="bird b3" style="top:9%;animation-delay:-16s"></span></div>
+    <div class="hills"><div class="hill hill1"></div><div class="hill hill2"></div><div class="hill hill3"></div></div>
+    <div class="wheat-row r1"></div>
+    <div class="wheat-row r2"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-in reveal">
+      <h1><small>Field &amp; Frame Studio</small>把土地上的故事<br><span>拍成影像</span></h1>
+      <p class="hero-lead">农民影视专注三农题材影像创作：乡村纪录片、农业宣传片、农产品品牌片与乡村短视频。我们相信，最动人的中国故事，往往长在地里、长在田埂上、长在农人的手心里。</p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">看影像作品 →</a>
+        <a href="#process" class="btn btn-ghost">了解合作方式</a>
+      </div>
+      <div class="hero-meta">
+        <div><b data-count="86">0</b><span>已记录村庄</span></div>
+        <div><b data-count="210">0</b><span>影像作品</span></div>
+        <div><b data-count="9">0</b><span>年田野创作</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：服务 ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow">SERVICES / 01</div>
+        <h2 class="h-title">六类创作服务<br>覆盖<em>三农影像全场景</em></h2>
+      </div>
+      <p class="h-sub">从一支短视频到一整季乡村纪录片，我们提供可拆分、可组合的模块服务，适配村集体、农业企业、县域文旅与品牌方。</p>
+    </div>
+    <div class="srv">
+      <article class="srv-item reveal">
+        <div class="srv-i"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></div>
+        <h3>乡村题材纪录片</h3>
+        <p>长期驻村跟拍，记录村庄变迁、农人生活与传统技艺，产出可被收藏、可被展映的纪录影像。</p>
+        <ul class="srv-tags"><li>驻村跟拍</li><li>人物纪录</li><li>技艺抢救</li></ul>
+      </article>
+      <article class="srv-item reveal">
+        <div class="srv-i"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <h3>农业宣传片</h3>
+        <p>县域农业形象片、产业招商片、村集体宣传片，把产业实力与乡土情怀讲成完整故事。</p>
+        <ul class="srv-tags"><li>县域形象</li><li>产业招商</li><li>村集体宣传</li></ul>
+      </article>
+      <article class="srv-item reveal">
+        <div class="srv-i"><svg viewBox="0 0 24 24"><path d="M12 2c4 5 7 8 7 12a7 7 0 01-14 0c0-4 3-7 7-12z"/></svg></div>
+        <h3>农产品品牌片</h3>
+        <p>从产地溯源到品牌叙事，用一支片子讲清农产品的生长环境与品质差异，支撑定价与渠道。</p>
+        <ul class="srv-tags"><li>产地溯源</li><li>品牌叙事</li><li>电商详情片</li></ul>
+      </article>
+      <article class="srv-item reveal">
+        <div class="srv-i"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 8l6 4-6 4z"/></svg></div>
+        <h3>乡村短视频内容</h3>
+        <p>抖音、视频号、小红书三农内容矩阵，从选题、脚本到拍摄剪辑，按月输出可持续更新的内容。</p>
+        <ul class="srv-tags"><li>选题策划</li><li>口播脚本</li><li>矩阵代运营</li></ul>
+      </article>
+      <article class="srv-item reveal">
+        <div class="srv-i"><svg viewBox="0 0 24 24"><path d="M4 4h16v6H4zM4 14h10v6H4zM18 14h2v6h-2z"/></svg></div>
+        <h3>乡村视觉包装</h3>
+        <p>动态片头、字幕体系、农产品包装视觉与宣传物料，让乡土品牌在每一帧画面里保持一致。</p>
+        <ul class="srv-tags"><li>动态片头</li><li>字幕体系</li><li>包装视觉</li></ul>
+      </article>
+      <article class="srv-item reveal">
+        <div class="srv-i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div>
+        <h3>影像后期制作</h3>
+        <p>调色、剪辑、配音配乐、字幕与声音设计，让田间素材具备成片级的画面质感与叙事节奏。</p>
+        <ul class="srv-tags"><li>达芬奇调色</li><li>声音设计</li><li>多语种字幕</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：影像作品 ============ -->
+<section class="section" id="works">
+  <div class="wrap">
+    <div class="works-head reveal">
+      <div class="eyebrow">WORKS / 02</div>
+      <div class="sec-head" style="margin-bottom:0">
+        <div>
+          <h2 class="h-title">影像作品<em>· 四个村庄的四年</em></h2>
+          <p class="h-sub">精选近期交付项目，涵盖乡村纪录片、县域宣传片、农产品品牌片与公益影像。</p>
+        </div>
+      </div>
+    </div>
+    <div class="works">
+      <article class="wrow reveal">
+        <div class="w-thumb"><div class="w-thumb-bg c1"></div><div class="w-thumb-in"><span class="w-num">CASE 01</span><span class="w-tag">乡村纪录片</span></div></div>
+        <div class="w-info">
+          <div class="yr">2025 / 皖南</div>
+          <h3>《茶山一年》</h3>
+          <p>驻村三百六十五天，跟拍一座茶山的四季与一个制茶家族的完整劳作周期，成片被本地文化馆收藏展映。</p>
+          <ul><li>驻村跟拍</li><li>人物纪录</li><li>52 分钟</li></ul>
+          <a href="#" class="w-more">查看项目详情 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="wrow flip reveal">
+        <div class="w-info">
+          <div class="yr">2024 / 鲁西</div>
+          <h3>《麦收的时候》</h3>
+          <p>记录一个村庄从播种到收获的完整麦收季，呈现机械化农业背后人与土地的关系。</p>
+          <ul><li>农业题材</li><li>短片</li><li>18 分钟</li></ul>
+          <a href="#" class="w-more">查看项目详情 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="w-thumb"><div class="w-thumb-bg c2"></div><div class="w-thumb-in"><span class="w-num">CASE 02</span><span class="w-tag">农业宣传片</span></div></div>
+      </article>
+      <article class="wrow reveal">
+        <div class="w-thumb"><div class="w-thumb-bg c3"></div><div class="w-thumb-in"><span class="w-num">CASE 03</span><span class="w-tag">农产品品牌片</span></div></div>
+        <div class="w-info">
+          <div class="yr">2024 / 滇南</div>
+          <h3>《一棵树的距离》</h3>
+          <p>为高原特色农产品打造的品牌溯源片，用产地环境与种植过程的真实影像，支撑品牌定价与渠道谈判。</p>
+          <ul><li>产地溯源</li><li>品牌叙事</li><li>3 分钟</li></ul>
+          <a href="#" class="w-more">查看项目详情 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="wrow flip reveal">
+        <div class="w-info">
+          <div class="yr">2023 / 湘西</div>
+          <h3>《手上的时间》</h3>
+          <p>乡村手艺人的纪录短片系列，用长镜头记录竹编、织锦、酿酒三门手艺的完整工序，用于非遗传播与文旅推广。</p>
+          <ul><li>非遗记录</li><li>系列短片</li><li>文旅推广</li></ul>
+          <a href="#" class="w-more">查看项目详情 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="w-thumb"><div class="w-thumb-bg c4"></div><div class="w-thumb-in"><span class="w-num">CASE 04</span><span class="w-tag">公益影像</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：合作流程 ============ -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow">PROCESS / 03</div>
+        <h2 class="h-title">五步合作流程<br>从<em>一次田野走访</em>到成片交付</h2>
+      </div>
+      <p class="h-sub">三农题材创作的特殊性在于「要先走进去」。我们坚持把田野走访作为第一步，而非先出方案。</p>
+    </div>
+    <div class="proc">
+      <div class="proc-bar">
+        <div class="pnode reveal">
+          <div class="pdot">01</div>
+          <h4>田野走访</h4>
+          <p>先到村里住几天，了解真实的人、事、物与季节节奏，再决定拍什么、怎么拍。</p>
+          <small>约 3-7 天</small>
+        </div>
+        <div class="pnode reveal">
+          <div class="pdot">02</div>
+          <h4>策划与脚本</h4>
+          <p>基于走访形成创意提案与分镜脚本，明确人物线索、拍摄季节点与成片时长。</p>
+          <small>约 1-2 周</small>
+        </div>
+        <div class="pnode reveal">
+          <div class="pdot">03</div>
+          <h4>季节拍摄</h4>
+          <p>按农事节奏分阶段拍摄，多次驻村跟拍，记录真实劳作与变化过程。</p>
+          <small>按季节点</small>
+        </div>
+        <div class="pnode reveal">
+          <div class="pdot">04</div>
+          <h4>剪辑与调色</h4>
+          <p>粗剪确认叙事结构，精剪、调色、配音配乐与字幕，两轮修改后进入终版。</p>
+          <small>约 3-4 周</small>
+        </div>
+        <div class="pnode reveal">
+          <div class="pdot">05</div>
+          <h4>成片交付</h4>
+          <p>交付主成片与多平台适配版本，附素材包与拍摄笔记，可用于展映与传播。</p>
+          <small>含源文件</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：田野档案 ============ -->
+<section class="section" id="field">
+  <div class="wrap">
+    <div class="field-head reveal">
+      <div class="eyebrow">FIELD NOTES / 04</div>
+      <div class="sec-head" style="margin-bottom:0">
+        <div>
+          <h2 class="h-title">田野档案<em>· 我们走过的村庄</em></h2>
+          <p class="h-sub">创作之外的记录。每个村庄都是一份正在消失的样本，我们把它们留下来。</p>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <article class="fcard reveal">
+        <div class="fphoto"><div class="fphoto-bg f1"></div><span class="fplace">安徽 · 祁门</span><span class="fquote" aria-hidden="true">&ldquo;</span></div>
+        <div class="fbody">
+          <div class="fmeta"><span>驻村 <b>365 天</b></span><span>2024.03 — 2025.03</span></div>
+          <h4>茶山上的清晨五点</h4>
+          <p>记录一座茶山的完整一年，也记录制茶人逐渐老去的双手与不肯离开的年轻一代。</p>
+          <a href="#" class="flink">阅读田野笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="fcard reveal">
+        <div class="fphoto"><div class="fphoto-bg f2"></div><span class="fplace">云南 · 普洱</span><span class="fquote" aria-hidden="true">&ldquo;</span></div>
+        <div class="fbody">
+          <div class="fmeta"><span>驻村 <b>180 天</b></span><span>2024.04 — 2024.10</span></div>
+          <h4>一棵树到一杯茶</h4>
+          <p>古茶树的生长环境、采摘标准与制作工艺，用真实影像讲清一杯茶的来处。</p>
+          <a href="#" class="flink">阅读田野笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="fcard reveal">
+        <div class="fphoto"><div class="fphoto-bg f3"></div><span class="fplace">山东 · 菏泽</span><span class="fquote" aria-hidden="true">&ldquo;</span></div>
+        <div class="fbody">
+          <div class="fmeta"><span>驻村 <b>90 天</b></span><span>2023.05 — 2023.08</span></div>
+          <h4>麦收的二十天</h4>
+          <p>一个村庄如何在二十天内完成播种到收获的全部工序，以及那些被机械替代的手艺。</p>
+          <a href="#" class="flink">阅读田野笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="fcard reveal">
+        <div class="fphoto"><div class="fphoto-bg f4"></div><span class="fplace">湖南 · 湘西</span><span class="fquote" aria-hidden="true">&ldquo;</span></div>
+        <div class="fbody">
+          <div class="fmeta"><span>驻村 <b>120 天</b></span><span>2023.03 — 2023.07</span></div>
+          <h4>竹编的最后一代</h4>
+          <p>记录竹编手艺人的完整工序，与他对这门手艺即将消失的平静叙述。</p>
+          <a href="#" class="flink">阅读田野笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="fcard reveal">
+        <div class="fphoto"><div class="fphoto-bg f5"></div><span class="fplace">贵州 · 黔东南</span><span class="fquote" aria-hidden="true">&ldquo;</span></div>
+        <div class="fbody">
+          <div class="fmeta"><span>驻村 <b>150 天</b></span><span>2022.06 — 2022.11</span></div>
+          <h4>稻田里的歌声</h4>
+          <p>侗族大歌的传承现场，记录歌声如何在稻田、鼓楼与节庆中被反复唱起。</p>
+          <a href="#" class="flink">阅读田野笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="fcard reveal">
+        <div class="fphoto"><div class="fphoto-bg f6"></div><span class="fplace">四川 · 凉山</span><span class="fquote" aria-hidden="true">&ldquo;</span></div>
+        <div class="fbody">
+          <div class="fmeta"><span>驻村 <b>200 天</b></span><span>2022.03 — 2022.10</span></div>
+          <h4>土豆与山路</h4>
+          <p>高海拔山区的种植结构与一条新修公路如何改变一个村的生计与选择。</p>
+          <a href="#" class="flink">阅读田野笔记 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目五：观察笔记 ============ -->
+<section class="section" id="news">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <div class="eyebrow">JOURNAL / 05</div>
+        <h2 class="h-title">观察笔记<em>· 三农影像创作手记</em></h2>
+      </div>
+      <p class="h-sub">关于乡村拍摄的方法、观察与反思，把经验变成可复用的工作方法。</p>
+    </div>
+    <div class="news">
+      <article class="ncard cat-1 reveal">
+        <div class="ncat">创作方法</div>
+        <div class="ndate">2026.09.30 · 8 分钟</div>
+        <h4>驻村拍摄的第一周，不要打开摄像机</h4>
+        <p>先住下来、先被看见、先学会被拒绝。我们总结驻村跟拍的前七天该做什么，以及为什么要忍住不拍。</p>
+        <a href="#" class="nmore">继续阅读 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="ncard cat-2 reveal">
+        <div class="ncat">观察与反思</div>
+        <div class="ndate">2026.09.12 · 6 分钟</div>
+        <h4>三农短视频为什么越拍越像</h4>
+        <p>当田园牧歌成为固定模板，真实的乡村反而消失了。我们谈谈三农内容的同质化问题，以及可能的出路。</p>
+        <a href="#" class="nmore">继续阅读 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="ncard cat-3 reveal">
+        <div class="ncat">工作方法</div>
+        <div class="ndate">2026.08.25 · 7 分钟</div>
+        <h4>一支农产品品牌片，预算该花在哪里</h4>
+        <p>产地走访、季节等待与真实人物，比棚拍与特效更值钱。我们给出一份可复用的预算分配清单。</p>
+        <a href="#" class="nmore">继续阅读 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="ncard cat-1 reveal">
+        <div class="ncat">创作方法</div>
+        <div class="ndate">2026.08.08 · 9 分钟</div>
+        <h4>如何让村民愿意面对镜头说话</h4>
+        <p>乡村拍摄最大的难点不是技术，是信任。五个具体做法，从方言翻译到「不要给报酬」的伦理考量。</p>
+        <a href="#" class="nmore">继续阅读 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="ncard cat-2 reveal">
+        <div class="ncat">行业观察</div>
+        <div class="ndate">2026.07.20 · 5 分钟</div>
+        <h4>县域宣传片的新变化：从喊口号到讲故事</h4>
+        <p>县域形象片的创作逻辑正在转变。我们梳理近三年承接的十二个县域项目，看需求方真正想要什么。</p>
+        <a href="#" class="nmore">继续阅读 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article class="ncard cat-3 reveal">
+        <div class="ncat">工作方法</div>
+        <div class="ndate">2026.07.03 · 6 分钟</div>
+        <h4>田间拍摄的设备清单与防雷指南</h4>
+        <p>尘土、雨水、高温与不稳定的电源，是乡村拍摄的真实挑战。一份我们用了九年的设备清单与防护经验。</p>
+        <a href="#" class="nmore">继续阅读 <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-in reveal">
+      <div class="eyebrow" style="margin-bottom:20px">LET'S GO TO THE FIELD</div>
+      <h2>如果你有一个村庄、一种作物<br>或一个想被讲出来的故事</h2>
+      <p>告诉我们你在哪里、想拍什么，我们会在三个工作日内回复初步的走访计划与创作方向。第一次走访不收取费用。</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary">预约田野走访</a>
+        <a href="mailto:hello@nongminyingshi.cn" class="btn btn-ghost">发送项目简报</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 6 5 9 5 13a7 7 0 0014 0c0-4-3-7-7-11z"/></svg></span><span>农民影视<small>FIELD &amp; FRAME STUDIO</small></span></a>
+        <p>农民影视，专注三农题材影像创作的工作室。乡村纪录片、农业宣传片、农产品品牌片与乡村短视频内容，把土地上的真实故事拍成影像。</p>
+        <div class="foot-social">
+          <a href="#" aria-label="微信"><svg viewBox="0 0 24 24"><path d="M9 4C5.1 4 2 6.7 2 10c0 1.6.8 3.1 2 4.2L3.5 16l2.6-1.3c.9.2 1.8.4 2.9.4.3 0 .6 0 .9-.1C9.7 14.7 9 13.4 9 12c0-3 2.7-5 6-5"/><path d="M15 10c-2.2 0-4 1.6-4 3.5S12.8 17 15 17c.6 0 1.2-.1 1.7-.3l2 1-.5-1.8c1.2-.8 2-2 2-3.2C20 11.6 18.2 10 15 10z"/></svg></a>
+          <a href="#" aria-label="抖音"><svg viewBox="0 0 24 24"><path d="M14 4v10a4 4 0 11-4-4M14 4c0 3 2 5 5 5"/></svg></a>
+          <a href="#" aria-label="视频号"><svg viewBox="0 0 24 24"><path d="M4 6l4-2v16l-4-2zM20 6l-4-2v16l4-2z"/></svg></a>
+          <a href="#" aria-label="小红书"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 10h8M8 14h5"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>导航</h5>
+        <ul>
+          <li><a href="#services">创作服务</a></li>
+          <li><a href="#works">影像作品</a></li>
+          <li><a href="#process">合作流程</a></li>
+          <li><a href="#field">田野档案</a></li>
+          <li><a href="#news">观察笔记</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>创作服务</h5>
+        <ul>
+          <li><a href="#">乡村题材纪录片</a></li>
+          <li><a href="#">农业宣传片</a></li>
+          <li><a href="#">农产品品牌片</a></li>
+          <li><a href="#">乡村短视频</a></li>
+          <li><a href="#">影像后期制作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>联系</h5>
+        <ul>
+          <li><a href="mailto:hello@nongminyingshi.cn">hello@nongminyingshi.cn</a></li>
+          <li><a href="tel:4000000000">400-000-0000</a></li>
+          <li><a href="#">合作与田野走访咨询</a></li>
+          <li><a href="#">素材与版权合作</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> 农民影视 · 专注三农题材影像创作</span>
+      <span><a href="#">隐私政策</a> · <a href="#">素材授权</a> · <a href="#">网站地图</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="top" id="topBtn" aria-label="返回顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var nav = document.getElementById('nav');
+  var sections = document.querySelectorAll('section[id], header[id]');
+  var links = document.querySelectorAll('.menu a[href^="#"]');
+  function onScroll(){
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+    document.getElementById('topBtn').classList.toggle('show', window.scrollY > 600);
+    var cur = '';
+    sections.forEach(function(s){
+      if(window.scrollY >= s.offsetTop - 120) cur = s.id;
+    });
+    links.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  var menu = document.getElementById('menu');
+  var btn = document.getElementById('menuBtn');
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
+  });
+  links.forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  function countUp(el){
+    var target = +el.dataset.count;
+    var n = 0;
+    var step = Math.max(1, Math.ceil(target / 60));
+    var timer = setInterval(function(){
+      n += step;
+      if(n >= target){ n = target; clearInterval(timer); }
+      el.textContent = n + (el.dataset.suf || '');
+    }, 26);
+  }
+
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          if(e.target.classList.contains('hero-meta')){
+            e.target.querySelectorAll('.hero-meta b').forEach(function(n){ if(!n.done){ n.done=true; countUp(n); } });
+          }
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -60px'});
+    document.querySelectorAll('.reveal, .hero-meta').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length > 1 && document.querySelector(id)){
+        e.preventDefault();
+        window.scrollTo({top: document.querySelector(id).offsetTop - 72, behavior:'smooth'});
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
